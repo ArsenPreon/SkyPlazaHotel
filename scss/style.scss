@@ -1,0 +1,82 @@
+@import "import";
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 17px;
+    background-color: #fff;
+    color: #000;
+    font-family: $fontStart, sans-serif;
+    font-weight: 400;
+}
+
+body._lock {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(29, 214, 238);
+    cursor: pointer;
+    font-family: $fontStart, sans-serif;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+    margibody: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.main{
+    flex: 1 1 auto;
+    margin-top: 53px;
+    transition: all .5s ease 0s;
+    @media (max-width: $md3) {
+      margin-top: 61px;  
+    };
+}
+.main__number{
+}
+
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+}
+  
+html.is-animating .transition-fade {
+    opacity: 0;
+}

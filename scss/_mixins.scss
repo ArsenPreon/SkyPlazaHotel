@@ -1,0 +1,117 @@
+@import "vars";
+
+
+@mixin adaptive-font($maxSize, $minSize){
+    font-size: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+
+@mixin adaptive-marginR($maxSize, $minSize){
+    margin-right: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-marginL($maxSize, $minSize){
+    margin-left: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-marginT($maxSize, $minSize){
+    margin-top: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-marginB($maxSize, $minSize){
+    margin-bottom: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-height($maxSize, $minSize){
+    height: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-width($maxSize, $minSize){
+    width: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-minwidth($maxSize, $minSize){
+    min-width: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-maxwidth($maxSize, $minSize){
+    max-width: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-paddingR($maxSize, $minSize){
+    padding-right: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-paddingL($maxSize, $minSize){
+    padding-left: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-paddingT($maxSize, $minSize){
+    padding-top: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-paddingB($maxSize, $minSize){
+    padding-bottom: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-top($maxSize, $minSize){
+    top: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-left($maxSize, $minSize){
+    left: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-right($maxSize, $minSize){
+    right: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-bottom($maxSize, $minSize){
+    bottom: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-flex($maxSize, $minSize){
+    flex:0 0 calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-columngap($maxSize, $minSize){
+    column-gap: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-gap($maxSize, $minSize){
+    gap: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+@mixin adaptive-padding($maxSize, $minSize){
+    padding: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (#{$maxWidthContainerMix} - 320)));
+}
+
+
+// ------------------------------custom
+@mixin adaptive-paddingAbout__us($maxSize, $minSize){
+    padding: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 768px) / (1291 - 768)));
+}
+@mixin adaptive-padding768($maxSize, $minSize){
+    padding: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 768px) / (#{$maxWidthContainerMix} - 768)));
+}
+@mixin adaptive-paddingBNumberSlider686-500($maxSize, $minSize){
+    padding-bottom: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 500px) / (686 - 500)));
+}
+@mixin adaptive-paddingBNumberSlider500-320($maxSize, $minSize){
+    padding-bottom: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (600 - 320)));
+}
+@mixin adaptive-width768($maxSize, $minSize){
+    width: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 768px) / (#{$maxWidthContainerMix} - 768)));
+}
+@mixin adaptive-fontSize768($maxSize, $minSize){
+    font-size: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 768px) / (#{$maxWidthContainerMix} - 768)));
+}
+@mixin adaptive-fontSize550-320($maxSize, $minSize){
+    font-size: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (550 - 320)));
+}
+@mixin adaptive-widthAbout__us($maxSize, $minSize){
+    width: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 768px) / (1291 - 768)));
+}
+@mixin adaptive-widthImages($maxSize, $minSize){
+    width: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 768px) / (1260 - 768)));
+}
+@mixin adaptive-widthImages-425-320($maxSize, $minSize){
+    width: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 320px) / (425 - 320)));
+}
+@mixin adaptive-widthAbout__us-768-425($maxSize, $minSize){
+    width: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 425px) / (768 - 425)));
+}
+@mixin adaptive-heightAbout__us($maxSize, $minSize){
+    height: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 768px) / (1291 - 768)));
+}
+@mixin adaptive-fontSizeAbout__us($maxSize, $minSize){
+    font-size: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 768px) / (1291 - 768)));
+}
+@mixin adaptive-rowgapAbout__us($maxSize, $minSize){
+    row-gap: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 768px) / (1291 - 768)));
+}
+@mixin adaptive-gapFooter748($maxSize, $minSize){
+    gap: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 748px) / (#{$maxWidthContainerMix} - 748)));
+}
+
+// ------------------------------custom()

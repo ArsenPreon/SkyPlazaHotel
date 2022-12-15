@@ -1,0 +1,17 @@
+@import "vars";
+
+._title{
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 110%;
+    color: #434343;
+    @media(max-width: $maxWidthContainer){
+        @include adaptive-font(44, 35);
+    };
+}
+._text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 125%;
+    color: #757575;
+}

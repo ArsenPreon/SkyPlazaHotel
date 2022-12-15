@@ -1,0 +1,16 @@
+@import 'vars';
+
+._btn{
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    background: #2F80ED;
+    border-radius: 9px;
+    transition: all .5s ease 0s;
+    color: #fff;
+    @media (any-hover: hover) {
+        &:hover {
+            transform: scale(1.03, 1.03);
+        }
+    }
+}
