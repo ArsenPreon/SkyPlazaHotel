@@ -110,6 +110,7 @@
 @mixin adaptive-rowgapAbout__us($maxSize, $minSize){
     row-gap: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 768px) / (1291 - 768)));
 }
+
 @mixin adaptive-gapFooter748($maxSize, $minSize){
     gap: calc((#{$minSize + px}) + (#{$maxSize - $minSize}) * ((100vw - 748px) / (#{$maxWidthContainerMix} - 748)));
 }

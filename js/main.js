@@ -62,10 +62,14 @@ function documentActions (e) {
                 headerWrapper.classList.remove('_del');
 
         }
+        if(targetElement.closest('.menu__link-1')){
+            if(body.classList.contains('_lock')){
+                body.classList.remove('_lock');
+            }
+        }
     }
 }
 document.addEventListener('click', documentActions);
-
 function yes (e) {
     if (document.querySelector('.images__swiper')) {
         const swiper2 = new Swiper('.images__swiper-mini', {
@@ -182,11 +186,11 @@ function yes (e) {
                 header__wrapper.classList.remove('_del');
                 social__header__phone.classList.remove('_del');
     
-                window.scrollTo({
-                    top: 0,
-                    left: 0,
-                    behavior: 'smooth'
-                })
+                // window.scrollTo({
+                //     top: 0,
+                //     left: 0,
+                //     behavior: 'smooth'
+                // })
         });
     }
     if(document.querySelector('.video')){
@@ -200,7 +204,6 @@ function yes (e) {
     window.scrollTo({
         top: 0,
         left: 0,
-        behavior: 'smooth'
     })
 }
 swup.on('contentReplaced', function() {
